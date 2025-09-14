@@ -20,10 +20,9 @@ ssl.cert.subject.CN:"example.com" X-App-Name: kibana
 ssl.cert.subject.CN:"example.com" kbn-name: kibana
 ```
 
-### Juicy Extensions
-
+### Kibana
 ```
-site:"example[.]com" ext:log | ext:txt | ext:conf | ext:cnf | ext:ini | ext:env | ext:sh | ext:bak | ext:backup | ext:swp | ext:old | ext:~ | ext:git | ext:svn | ext:htpasswd | ext:htaccess | ext:json
+ssl.cert.subject.CN:"example.com" kibana content-length:217
 ```
 
 ### High % inurl keywords
