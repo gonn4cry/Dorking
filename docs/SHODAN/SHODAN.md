@@ -96,10 +96,6 @@ ssl.cert.subject.CN:"example.com" X-Magento-Cache-Debug
 ```
 
 ```
-ssl.cert.subject.CN:"example.com" X-Generator: Drupal 7
-```
-
-```
 ssl.cert.subject.CN:"example.com" WWW-Authenticate
 ```
 
@@ -116,7 +112,11 @@ ssl.cert.subject.CN:"example.com" http.title:"react"
 ```
 
 ```
-ssl.cert.subject.CN:"example[.]com" http.component:"Drupal"
+ssl.cert.subject.CN:"example.com" X-Generator: Drupal 7
+```
+
+```
+ssl.cert.subject.CN:"example.com" http.component:"Drupal"
 ```
 
 ### Swagger UI
