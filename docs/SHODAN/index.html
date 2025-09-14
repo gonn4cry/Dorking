@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shodan Dorks for Bug Bounty</title>
+    <title>Google Dorks for Bug Bounty</title>
     <style>
         :root {
             --primary-color: #4CAF50;
@@ -151,15 +151,19 @@
 </head>
 <body>
     <div class="container">
-        <h1>Shodan Dorks for Bug Bounty</h1>
+        <h1>Google Dorks for Bug Bounty</h1>
+        
+       
 
         <div class="search-container">
             <label for="domainInput">Enter a domain:</label>
             <input type="text" id="domainInput" placeholder="example.com" oninput="updateDomain()">
         </div>
         
-       <!--- <div id="tooltip" class="hidden">For multiple domains, separate by comma. e.g., example1.com, example2.com</div>
-    </div>--->
+        <div id="tooltip" class="hidden">For multiple domains, separate by comma. e.g., example1.com, example2.com</div>
+    </div>
+
+    <ul id="dorkList"></ul>
 
     <script>
         const domainInput = document.getElementById('domainInput');
@@ -178,6 +182,7 @@
         let originalDorks = [];
         
         async function fetchDorks() {
+            const url = "https://raw.githubusercontent.com/gonn4cry/Dorking/refs/heads/main/docs/GOOGLE/GOOGLE.md";
             const response = await fetch(url);
             const text = await response.text();
 
@@ -206,7 +211,7 @@
     let prevTitle = '';
 
         function createDorkListItem(dork, description) {
-            const googleLink = `https://shodan.io/search?query=${encodeURIComponent(dork)}`;
+            const googleLink = `https://www.google.com/search?q=${encodeURIComponent(dork)}`;
 
             const listItem = document.createElement("li");
 
@@ -269,7 +274,7 @@
                     originalDork = originalDork.replace(/ \| "([^"]+)"/gi, " | ");
                 }
 
-                const updatedLink = `https://shodan.io/search?query=${encodeURIComponent(originalDork)}`;
+                const updatedLink = `https://www.google.com/search?q=${encodeURIComponent(originalDork)}`;
             
                 link.textContent = originalDork;
                 link.href = updatedLink;
