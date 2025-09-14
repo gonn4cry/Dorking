@@ -113,28 +113,34 @@ ssl.cert.subject.CN:"example.com" product:elastic port:9200
 ssl.cert.subject.CN:"example.com" X-Magento-Cache-Debug
 ```
 
-### Web / CMS Headers
-
 ```
 ssl.cert.subject.CN:"example.com" X-Generator: Drupal 7
 ```
-
-### Web / CMS Headers
 
 ```
 ssl.cert.subject.CN:"example.com" WWW-Authenticate
 ```
 
-### Web / CMS Headers
-
 ```
 ssl.cert.subject.CN:"example.com" x-drupal-cache
+```
+
+```
+ssl.cert.subject.CN:"example.com" http.title:"django"
+```
+
+```
+ssl.cert.subject.CN:"example.com" http.title:"react"
 ```
 
 ### Jenkins
 
 ```
 ssl.cert.subject.CN:"example.com" html:Dashboard Jenkins http.component:jenkins
+```
+
+```
+ssl.cert.subject.CN:"example.com" product:jenkins
 ```
 
 ### Apache/Tomcat
@@ -175,10 +181,6 @@ ssl.cert.subject.CN:"example.com" Server: NessusWWW
 ssl.cert.subject.CN:"example.com" http.html:"admin panel"
 ```
 
-```
-ssl.cert.subject.CN:"example.com" http.html:"admin"
-```
-
 ### Directory Listing
 
 ```
@@ -188,12 +190,12 @@ ssl.cert.subject.CN:"example.com" http.title:"Index of"
 ### PHP
 
 ```
-http.component:php
+ssl.cert.subject.CN:"example.com" http.component:php
 ```
 
 ### ASPX
 ```
-site:digitaloceanspaces.com "example[.]com"
+ssl.cert.subject.CN:"example.com" http.component:asp.net
 ```
 
 ### Forgotten Hosts
@@ -227,53 +229,92 @@ ssl.cert.subject.CN:"example.com" http.title:Sign in
 ssl.cert.subject.CN:"example.com" http.title:Sign up
 ```
 
-### JFrog Artifactory
+### 302 Redirect
 
 ```
-site:jfrog.io "example[.]com"
+ssl.cert.subject.CN:"example.com" http.status:301,302,303
 ```
 
-### Firebase
+### Connector UI
 
 ```
-site:firebaseio.com "example[.]com"
+ssl.cert.subject.CN:"example.com" http.title:"Connector UI"
 ```
 
-## Dorks that work better w/o domain
-
-### Bug Bounty programs and Vulnerability Disclosure Programs <!--omit-->
+### Juicy Keywords
 
 ```
-"submit vulnerability report" | "powered by bugcrowd" | "powered by hackerone"
+ssl.cert.subject.CN:"example.com" http.title:"manager"
 ```
 
 ```
-site:*/security.txt "bounty"
+ssl.cert.subject.CN:"example.com" http.title:"backend"
 ```
 
-### Apache Server Status Exposed <!--omit-->
-
 ```
-site:*/server-status apache
+ssl.cert.subject.CN:"example.com" http.html:"admin"
 ```
 
-### WordPress <!--omit-->
-
 ```
-inurl:/wp-admin/admin-ajax.php
+ssl.cert.subject.CN:"example.com" http.title:"database"
 ```
 
-### Drupal <!--omit-->
-
 ```
-intext:"Powered by" & intext:Drupal & inurl:user
+ssl.cert.subject.CN:"example.com" http.title:"settings"
 ```
 
-### Joomla <!--omit-->
-
 ```
-site:*/joomla/login
+ssl.cert.subject.CN:"example.com" http.title:"setup"
 ```
 
+```
+ssl.cert.subject.CN:"example.com" http.title:"control"
+```
 
----
+```
+ssl.cert.subject.CN:"example.com" http.title:"welcome"
+```
+
+```
+ssl.cert.subject.CN:"example.com"  http.title:"monitor"
+```
+
+```
+ssl.cert.subject.CN:"example.com"  http.title:"api"
+```
+
+```
+ssl.cert.subject.CN:"example.com" http.title:"payment"
+```
+
+```
+ssl.cert.subject.CN:"example.com" http.title:"console"
+```
+
+```
+ssl.cert.subject.CN:"example.com" http.title:"terminal"
+```
+
+```
+ssl.cert.subject.CN:"example.com" http.title:"configuration"
+```
+
+```
+ssl.cert.subject.CN:"example.com" http.title:"config"
+```
+
+```
+ssl.cert.subject.CN:"example.com" http.title:"devops"
+```
+
+```
+ssl.cert.subject.CN:"example.com" http.title:"system"
+```
+
+```
+ssl.cert.subject.CN:"example.com" http.title:"documentation"
+```
+
+```
+ssl.cert.subject.CN:"example.com" http.html:"password"
+```
