@@ -25,40 +25,40 @@ ssl.cert.subject.CN:"example.com" kbn-name: kibana
 ssl.cert.subject.CN:"example.com" kibana content-length:217
 ```
 
-### High % inurl keywords
+### FTP Servers
 
 ```
-inurl:conf | inurl:env | inurl:cgi | inurl:bin | inurl:etc | inurl:root | inurl:sql | inurl:backup | inurl:admin | inurl:php site:example[.]com
+ssl.cert.subject.CN:"example.com" "230 login successful" port:"21"
 ```
 
-### Server Errors
+### FTP Servers
 
-```
-inurl:"error" | intitle:"exception" | intitle:"failure" | intitle:"server at" | inurl:exception | "database error" | "SQL syntax" | "undefined index" | "unhandled exception" | "stack trace" site:example[.]com
-```
-
-### XSS prone parameters
-
-```
-inurl:q= | inurl:s= | inurl:search= | inurl:query= | inurl:keyword= | inurl:lang= inurl:& site:example.com
+``` 
+ssl.cert.subject.CN:"example.com" vsftpd 2.3.4 port:21
 ```
 
-### Open Redirect prone parameters
+### FTP Servers
 
 ```
-inurl:url= | inurl:return= | inurl:next= | inurl:redirect= | inurl:redir= | inurl:ret= | inurl:r2= | inurl:page= inurl:& inurl:http site:example.com
+ssl.cert.subject.CN:"example.com" 230 'anonymous@' login ok
+```
+
+### FTP Servers
+
+```
+ssl.cert.subject.CN:"example.com" vsftpd 3.0.3
 ```
 
 ### SQLi Prone Parameters
 
 ```
-inurl:id= | inurl:pid= | inurl:category= | inurl:cat= | inurl:action= | inurl:sid= | inurl:dir= inurl:& site:example.com
+ssl.cert.subject.CN:"example.com"
 ```
 
 ### SSRF Prone Parameters
 
 ```
-inurl:http | inurl:url= | inurl:path= | inurl:dest= | inurl:html= | inurl:data= | inurl:domain=  | inurl:page= inurl:& site:example.com
+ssl.cert.subject.CN:"example.com"
 ```
 
 ### LFI Prone Parameters
