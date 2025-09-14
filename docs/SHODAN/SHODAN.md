@@ -116,7 +116,7 @@ ssl.cert.subject.CN:"example.com" http.title:"react"
 ```
 
 ```
-ssl.cert.subject.CN:"example.com" http.component:"Drupal"
+ssl.cert.subject.CN:"example[.]com" http.component:"Drupal"
 ```
 
 ### Swagger UI
