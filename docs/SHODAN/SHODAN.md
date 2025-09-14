@@ -107,68 +107,80 @@ ssl.cert.subject.CN:"example.com" "X-elastic-product: Elasticsearch"
 ssl.cert.subject.CN:"example.com" product:elastic port:9200
 ```
 
-### Elasticsearch / Metrics
+### Web / CMS Headers
 
 ```
-inurl:email= | inurl:phone= | inurl:password= | inurl:secret= inurl:& site:example[.]com
+ssl.cert.subject.CN:"example.com" X-Magento-Cache-Debug
 ```
 
-### Elasticsearch / Metrics
+### Web / CMS Headers
 
 ```
-inurl:/content/usergenerated | inurl:/content/dam | inurl:/jcr:content | inurl:/libs/granite | inurl:/etc/clientlibs | inurl:/content/geometrixx | inurl:/bin/wcm | inurl:/crx/de site:example[.]com
+ssl.cert.subject.CN:"example.com" X-Generator: Drupal 7
 ```
 
-### Disclosed XSS and Open Redirects
+### Web / CMS Headers
 
 ```
-site:openbugbounty.org inurl:reports intext:"example.com"
+ssl.cert.subject.CN:"example.com" WWW-Authenticate
 ```
 
-### Google Groups
+### Web / CMS Headers
 
 ```
-site:groups.google.com "example.com"
+ssl.cert.subject.CN:"example.com" x-drupal-cache
 ```
 
-### Code Leaks
+### Jenkins
 
 ```
-site:pastebin.com "example.com"
+ssl.cert.subject.CN:"example.com" html:Dashboard Jenkins http.component:jenkins
 ```
 
-```
-site:jsfiddle.net "example.com"
-```
+### Apache/Tomcat
 
 ```
-site:codebeautify.org "example.com"
+ssl.cert.subject.CN:"example.com" product:apache tomcat
 ```
 
-```
-site:codepen.io "example.com"
-```
-
-### Cloud Storage
+### Citrix / Remote Access
 
 ```
-site:s3.amazonaws.com "example.com"
+ssl.cert.subject.CN:"example.com" "Citrix Gateway"
 ```
 
 ```
-site:blob.core.windows.net "example.com"
+ssl.cert.subject.CN:"example.com" html:/dana-na/
 ```
 
 ```
-site:googleapis.com "example.com"
+ssl.cert.subject.CN:"example.com" authentication disabled RFB 003.008
+```
+
+### Telnet / RootAccess
+
+```
+ssl.cert.subject.CN:"example.com" root@ port:23 -login -password -name -Session
+```
+
+### Network
+
+```
+ssl.cert.subject.CN:"example.com" Server: NessusWWW
+```
+
+### Admin Panel
+
+```
+ssl.cert.subject.CN:"example.com" http.html:"admin panel"
 ```
 
 ```
-site:drive.google.com "example.com"
+ssl.cert.subject.CN:"example.com" http.html:"admin"
 ```
 
 ```
-site:dev.azure.com "example[.]com"
+
 ```
 
 ```
