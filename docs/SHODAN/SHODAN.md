@@ -8,8 +8,6 @@
 ssl.cert.subject.CN:"example.com" title:"kibana" port:"443"
 ```
 
-### Kibana
-
 ```
 ssl.cert.subject.CN:"example.com" X-App-Name: kibana
 ```
@@ -121,7 +119,7 @@ ssl.cert.subject.CN:"example.com" http.title:"react"
 ssl.cert.subject.CN:"example.com" http.component:"Drupal"
 ```
 
-###
+### Swagger UI
 
 ```
 ssl.cert.subject.CN:"example.com" http.title:"Swagger UI"  
