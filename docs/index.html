@@ -152,15 +152,6 @@
 <body>
     <div class="container">
         <h1>Google Dorks for Bug Bounty</h1>
-        
-        <div class="social-links">
-            <a href="https://twitter.com/TakSec" target="_blank" rel="noopener">
-                <img src="https://img.shields.io/twitter/url/https/twitter.com/TakSec.svg?style=social&label=Follow%20%40TakSec" alt="Twitter Follow Badge">
-            </a>
-            <a href="https://github.com/TakSec/google-dorks-bug-bounty/" target="_blank" rel="noopener">
-                GitHub Repo
-            </a>
-        </div>
 
         <div class="search-container">
             <label for="domainInput">Enter a domain:</label>
@@ -199,7 +190,7 @@
         let originalDorks = [];
         
         async function fetchDorks() {
-            const url = "https://raw.githubusercontent.com/TakSec/google-dorks-bug-bounty/main/README.md";
+            const url = "https://raw.githubusercontent.com/gonn4cry/Dorking/refs/heads/main/docs/GOOGLE.md";
             const response = await fetch(url);
             const text = await response.text();
 
