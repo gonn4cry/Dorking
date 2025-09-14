@@ -179,40 +179,52 @@ ssl.cert.subject.CN:"example.com" http.html:"admin panel"
 ssl.cert.subject.CN:"example.com" http.html:"admin"
 ```
 
-```
+### Directory Listing
 
 ```
-
-```
-site:onedrive.live.com "example[.]com"
+ssl.cert.subject.CN:"example.com" http.title:"Index of"
 ```
 
+### PHP
+
+```
+http.component:php
+```
+
+### ASPX
 ```
 site:digitaloceanspaces.com "example[.]com"
 ```
 
+### Forgotten Hosts
+
 ```
-site:sharepoint.com "example[.]com"
+ssl.cert.subject.CN:"example.com" ssl.cert.expired: true 
+```
+
+### Authentication endpoints
+```
+ssl.cert.subject.CN:"example.com" http.title:Login
 ```
 
 ```
-site:s3-external-1.amazonaws.com "example[.]com"
+ssl.cert.subject.CN:"example.com" http.title:Log in
 ```
 
 ```
-site:s3.dualstack.us-east-1.amazonaws.com "example[.]com"
+ssl.cert.subject.CN:"example.com" http.title:Signin
 ```
 
 ```
-site:dropbox.com/s "example[.]com"
+ssl.cert.subject.CN:"example.com" http.title:Register
 ```
 
 ```
-site:box.com/s "example[.]com"
+ssl.cert.subject.CN:"example.com" http.title:Sign in
 ```
 
 ```
-site:docs.google.com inurl:"/d/" "example[.]com"
+ssl.cert.subject.CN:"example.com" http.title:Sign up
 ```
 
 ### JFrog Artifactory
