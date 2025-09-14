@@ -49,68 +49,71 @@ ssl.cert.subject.CN:"example.com" 230 'anonymous@' login ok
 ssl.cert.subject.CN:"example.com" vsftpd 3.0.3
 ```
 
-### SQLi Prone Parameters
+### VPN / WebVPN
 
 ```
-ssl.cert.subject.CN:"example.com"
+ssl.cert.subject.CN:"example.com" "set-cookie: webvpn;"
 ```
 
-### SSRF Prone Parameters
-
+### VPN / WebVPN 
 ```
-ssl.cert.subject.CN:"example.com"
-```
-
-### LFI Prone Parameters
-
-```
-inurl:include | inurl:dir | inurl:detail= | inurl:file= | inurl:folder= | inurl:inc= | inurl:locate= | inurl:doc= | inurl:conf= inurl:& site:example.com
+ssl.cert.subject.CN:"example.com" "Set-Cookie: webvpn"
 ```
 
-### RCE Prone Parameters
+### VPN / WebVPN
 
 ```
-inurl:cmd | inurl:exec= | inurl:query= | inurl:code= | inurl:do= | inurl:run= | inurl:read=  | inurl:ping= inurl:& site:example.com
+ssl.cert.subject.CN:"example.com" "Set-Cookie:webvpnlogin=1"
 ```
 
-### File upload endpoints
+### Siemens / ICS
 
 ```
-site:example.com ”choose file”
+ssl.cert.subject.CN:"example.com" Siemens S7 
 ```
 
-### API Docs
+### Database Management
 
 ```
-inurl:apidocs | inurl:api-docs | inurl:swagger | inurl:api-explorer site:"example[.]com"
+ssl.cert.subject.CN:"example.com" "Set-Cookie: phpMyAdmin"
 ```
 
-### Login Pages
+### Database Management
 
 ```
-inurl:login | inurl:signin | intitle:login | intitle:signin | inurl:secure site:example[.]com
+ssl.cert.subject.CN:"example.com" "Set-Cookie: mongo-express="
 ```
 
-### Test Environments
+## Database Management
 
 ```
-inurl:test | inurl:env | inurl:dev | inurl:staging | inurl:sandbox | inurl:debug | inurl:temp | inurl:internal | inurl:demo site:example.com
+ssl.cert.subject.CN:"example.com" product:mongodb
 ```
 
-### Sensitive Documents
-
+### Gitlab
 ```
-site:example.com ext:txt | ext:pdf | ext:xml | ext:xls | ext:xlsx | ext:ppt | ext:pptx | ext:doc | ext:docx
-intext:“confidential” | intext:“Not for Public Release” | intext:”internal use only” | intext:“do not distribute”
+ssl.cert.subject.CN:"example.com" Set-Cookie: _gitlab_session
 ```
 
-### Sensitive Parameters
+### Elasticsearch / Metrics
+
+```
+ssl.cert.subject.CN:"example.com" "X-elastic-product: Elasticsearch"
+```
+
+### Elasticsearch / Metrics
+
+```
+ssl.cert.subject.CN:"example.com" product:elastic port:9200
+```
+
+### Elasticsearch / Metrics
 
 ```
 inurl:email= | inurl:phone= | inurl:password= | inurl:secret= inurl:& site:example[.]com
 ```
 
-### Adobe Experience Manager (AEM)
+### Elasticsearch / Metrics
 
 ```
 inurl:/content/usergenerated | inurl:/content/dam | inurl:/jcr:content | inurl:/libs/granite | inurl:/etc/clientlibs | inurl:/content/geometrixx | inurl:/bin/wcm | inurl:/crx/de site:example[.]com
