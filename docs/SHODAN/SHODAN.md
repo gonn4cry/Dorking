@@ -14,13 +14,10 @@ ssl.cert.subject.CN:"example.com" title:"kibana" port:"443"
 ssl.cert.subject.CN:"example.com" X-App-Name: kibana
 ```
 
-### Kibana
-
 ```
 ssl.cert.subject.CN:"example.com" kbn-name: kibana
 ```
 
-### Kibana
 ```
 ssl.cert.subject.CN:"example.com" kibana content-length:217
 ```
@@ -31,19 +28,13 @@ ssl.cert.subject.CN:"example.com" kibana content-length:217
 ssl.cert.subject.CN:"example.com" "230 login successful" port:"21"
 ```
 
-### FTP Servers
-
 ``` 
 ssl.cert.subject.CN:"example.com" vsftpd 2.3.4 port:21
 ```
 
-### FTP Servers
-
 ```
 ssl.cert.subject.CN:"example.com" 230 'anonymous@' login ok
 ```
-
-### FTP Servers
 
 ```
 ssl.cert.subject.CN:"example.com" vsftpd 3.0.3
@@ -55,18 +46,13 @@ ssl.cert.subject.CN:"example.com" vsftpd 3.0.3
 ssl.cert.subject.CN:"example.com" "set-cookie: webvpn;"
 ```
 
-### VPN / WebVPN 
 ```
 ssl.cert.subject.CN:"example.com" "Set-Cookie: webvpn"
 ```
 
-### VPN / WebVPN
-
 ```
 ssl.cert.subject.CN:"example.com" "Set-Cookie:webvpnlogin=1"
 ```
-
-### Siemens / ICS
 
 ```
 ssl.cert.subject.CN:"example.com" Siemens S7 
@@ -75,16 +61,16 @@ ssl.cert.subject.CN:"example.com" Siemens S7
 ### Database Management
 
 ```
-ssl.cert.subject.CN:"example.com" "Set-Cookie: phpMyAdmin"
+ssl.cert.subject.CN:"example.com" "MongoDB Server Information" port:27017
 ```
 
-### Database Management
+```
+ssl.cert.subject.CN:"example.com" "Set-Cookie: phpMyAdmin"
+```
 
 ```
 ssl.cert.subject.CN:"example.com" "Set-Cookie: mongo-express="
 ```
-
-## Database Management
 
 ```
 ssl.cert.subject.CN:"example.com" product:mongodb
@@ -100,8 +86,6 @@ ssl.cert.subject.CN:"example.com" Set-Cookie: _gitlab_session
 ```
 ssl.cert.subject.CN:"example.com" "X-elastic-product: Elasticsearch"
 ```
-
-### Elasticsearch / Metrics
 
 ```
 ssl.cert.subject.CN:"example.com" product:elastic port:9200
@@ -133,6 +117,16 @@ ssl.cert.subject.CN:"example.com" http.title:"django"
 ssl.cert.subject.CN:"example.com" http.title:"react"
 ```
 
+```
+ssl.cert.subject.CN:"example.com" http.component:"Drupal"
+```
+
+###
+
+```
+ssl.cert.subject.CN:"example.com" http.title:"Swagger UI"  
+```
+
 ### Jenkins
 
 ```
@@ -147,6 +141,10 @@ ssl.cert.subject.CN:"example.com" product:jenkins
 
 ```
 ssl.cert.subject.CN:"example.com" product:apache tomcat
+```
+
+```
+ssl.cert.subject.CN:"example.com" "Tomcat" admin
 ```
 
 ### Citrix / Remote Access
@@ -235,6 +233,12 @@ ssl.cert.subject.CN:"example.com" http.title:Sign up
 ssl.cert.subject.CN:"example.com" http.status:301,302,303
 ```
 
+### Atlassian Confluence
+
+```
+ssl.cert.subject.CN:"example.com" http.html:"Atlassian Confluence" port:8090
+```
+
 ### Connector UI
 
 ```
@@ -317,4 +321,8 @@ ssl.cert.subject.CN:"example.com" http.title:"documentation"
 
 ```
 ssl.cert.subject.CN:"example.com" http.html:"password"
+```
+
+```
+ssl.cert.subject.CN:"example.com" http.title:"admin"
 ```
