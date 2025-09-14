@@ -1,14 +1,5 @@
 # Google Dorks for Bug Bounty
 
-A list of Google Dorks for Bug Bounty, Web Application Security, and Pentesting
-
-[Live Tool](https://taksec.github.io/google-dorks-bug-bounty/)
-
-[![tool screenshot](https://github.com/TakSec/google-dorks-bug-bounty/assets/27094033/3ff009d7-f402-4eb2-8321-ce22eeeb5605)](https://taksec.github.io/google-dorks-bug-bounty/)
-
-[![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/TakSec.svg?style=social&label=Follow%20%40TakSec)](https://twitter.com/TakSec)
-</p>
-
 ---
 
 ### Broad domain search w/ negative search <!--omit-->
@@ -260,19 +251,3 @@ site:*/joomla/login
 
 
 ---
-
-Medium articles for more dorks:
-
-https://thegrayarea.tech/5-google-dorks-every-hacker-needs-to-know-fed21022a906
-
-https://infosecwriteups.com/uncover-hidden-gems-in-the-cloud-with-google-dorks-8621e56a329d
-
-https://infosecwriteups.com/10-google-dorks-for-sensitive-data-9454b09edc12
-
-Top Parameters:
-
-https://github.com/lutfumertceylan/top25-parameter
-
-Proviesec dorks:
-
-https://github.com/Proviesec/google-dorks
