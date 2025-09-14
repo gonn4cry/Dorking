@@ -1,11 +1,11 @@
-# Google Dorks for Bug Bounty
+# Shodan Dorks for Bug Bounty
 
 ---
 
-### Broad domain search w/ negative search <!--omit-->
+### Kibana
 
 ```
-site:example.com -www -shop -share -ir -mfa
+ssl.cert.subject.CN:"example.com" title:"kibana" port:"443"
 ```
 
 ### PHP extension w/ parameters
