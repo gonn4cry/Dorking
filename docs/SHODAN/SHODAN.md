@@ -8,16 +8,16 @@
 ssl.cert.subject.CN:"example.com" title:"kibana" port:"443"
 ```
 
-### PHP extension w/ parameters
+### Kibana
 
 ```
-site:example.com ext:php inurl:?
+ssl.cert.subject.CN:"example.com" X-App-Name: kibana
 ```
 
-### API Endpoints
+### Kibana
 
 ```
-site:example[.]com inurl:api | site:*/rest | site:*/v1 | site:*/v2 | site:*/v3
+ssl.cert.subject.CN:"example.com" kbn-name: kibana
 ```
 
 ### Juicy Extensions
