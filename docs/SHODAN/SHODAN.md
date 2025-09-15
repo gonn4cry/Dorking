@@ -14,6 +14,12 @@ ssl.cert.subject.CN:"example.com"  http.html:Xdebug
 ssl.cert.subject.CN:"example.com" http.html:"OperationalError at /"
 ```
 
+### Netdata Dashboard
+
+```
+http.title:"netdata dashboard"
+```
+
 ### Kibana
 
 ```
