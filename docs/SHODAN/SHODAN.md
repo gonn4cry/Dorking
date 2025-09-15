@@ -2,6 +2,12 @@
 
 ---
 
+### Xdebug
+
+```
+ssl.cert.subject.CN:"example.com"  http.html:Xdebug
+```
+
 ### Kibana
 
 ```
