@@ -8,6 +8,12 @@
 ssl.cert.subject.CN:"example.com"  http.html:Xdebug
 ```
 
+### Django Debug=True
+
+```
+ssl.cert.subject.CN:"example.com" http.html:"OperationalError at /"
+```
+
 ### Kibana
 
 ```
