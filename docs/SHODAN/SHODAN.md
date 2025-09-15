@@ -111,6 +111,8 @@ ssl.cert.subject.CN:"example.com" http.title:"django"
 ssl.cert.subject.CN:"example.com" http.title:"react"
 ```
 
+### Drupal
+
 ```
 ssl.cert.subject.CN:"example.com" X-Generator: Drupal 7
 ```
