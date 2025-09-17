@@ -17,7 +17,7 @@ ssl.cert.subject.CN:"example.com" http.html:"OperationalError at /"
 ### Netdata Dashboard
 
 ```
-http.title:"netdata dashboard"
+ssl.cert.subject.CN:"example.com" http.title:"netdata dashboard"
 ```
 
 ### Kibana
@@ -132,11 +132,11 @@ ssl.cert.subject.CN:"example.com" http.title:"react"
 ### Drupal
 
 ```
-ssl.cert.subject.CN:"example.com" X-Generator: Drupal 7
+ssl.cert.subject.CN:"example[.]com" X-Generator: Drupal 7
 ```
 
 ```
-ssl.cert.subject.CN:"example.com" http.component:"Drupal"
+ssl.cert.subject.CN:"example[.]com" http.component:"Drupal"
 ```
 
 ### Swagger UI
